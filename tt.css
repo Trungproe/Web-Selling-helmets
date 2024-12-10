@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 100px; /* Để phần nội dung không bị che khuất bởi header */
+
+}
+.heads{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.205);
+    background-color: #54799d;
+    border-radius: 10px;
+}
+.heads h1{
+    color: #b48c39;
+    font-size: 50px;
+    font-weight: 800;
+    margin-left: 1%; 
+}
+.Menu a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+.buynow{
+    margin-top: 5px;
+    padding: 10px 15px;
+    background-color: #b48c39;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+}
+.add{
+    margin-top: 15px;
+margin-left: 20px;
+    padding: 10px 15px;
+    background-color: #b48c39;
+    border-radius: 7px;
+    outline: none;
+    font-weight: bold;
+    border: none;
+}
+
+
+
+.Menu{
+    display: flex;
+padding-left: 20px;
+align-items: center;
+justify-content: center;
+}
+.Menu a:hover{
+    color: #b48c39;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Hiển thị menu con khi di chuột vào */
+}
+.tron{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #b48c39;
+}
+.timkiem{
+    padding: 10px 5px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+outline: none;
+}
+.icon{
+    margin-right:2%;
+}
+.find{
+position: relative;
+width: 220px;
+background-color: white;
+border: none;
+outline: none;
+border-radius: 10px;
+}
+.bao{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+.tron{
+    margin-left: 5px;
+}
+
+.conten{
+    margin-top: 20px;
+    width: 100%;
+}
+.luxury{
+    width: 100%;
+}
+.o1{
+    width: 100%;
+    height: 400px;
+    background-color:#54799d;
+    text-align: center;
+}
+.o1 img{
+    width: 30%;
+    height: 85%;
+    object-fit: cover; 
+    object-fit: contain;
+    transition: all 0.5s ease;
+    border-radius: 90%;
+}
+.buynow:hover{
+    background-color: #54799d;
+}
+.o1 img:hover{
+    transform: translateY(-0.5cm)
+}
+.thuonghieu{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+}
+.thuonghieu h3{
+    color: white;
+    font-size: 30px;
+    padding: 40px 100px;
+    background:#b48c39 ;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+.gioithieu{
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+.gioithieu h2::first-letter{
+    color:#b48c39 ;
+    font-size: 60px;
+    font-weight: bold;
+}
+.gioithieu h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+.ke1{
+    margin-top: 5px;
+    width: 100%;
+    height: 3px;
+    background-color: #b48c39;
+    border-radius: 5px;
+}
+.ke1:hover{
+    background-color:black;
+}
+.conten2{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+.grap{
+    /* width: 18%; */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.174); 
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+    width: calc(18% - 20px); 
+}
+.grap:hover{
+     transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.52); 
+}
+.grap img{
+    width: 80%;
+    object-fit: cover; 
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.grap img:hover{
+    /* transform: translateY(-10px); Di chuyển lên trên 10px khi hover */
+}
+.ke2{
+    width: 90%;
+    height: 5px;
+    background-color: #b48c39;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+.namemu p{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.gia{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.gia p:nth-child(2){
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color:#b48c39;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+.gia p:nth-child(1){
+    padding: 10px 0px;
+    font-size: 20px;
+    opacity: 0.6;
+}
+.gia p:nth-child(2):hover{
+    color: white;
+    background-color: red;
+}
+.sale{
+    position: absolute;
+    padding: 10px 10px;
+    background-color: #b48c39;
+    top: 5px;
+    left: 5px;
+    border-bottom-right-radius: 15px  ;
+}
+.mota{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    padding: 20px;
+
+}
+.mota:hover{
+    text-decoration: underline;
+    color: #b48c39;
+}
+.gioithieu2{
+margin-top: 2px;
+}
+.tong{
+    margin-top: 40px;
+}
+.conten3 {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Cột đầu tiên rộng hơn cột thứ hai */
+    grid-template-rows: 1fr 1fr; /* Hai hàng có chiều cao bằng nhau */
+    gap: 20px; /* Khoảng cách giữa các ô */
+    height: 600px; /* Chiều cao tổng thể cho layout */
+}
+
+.t1 {
+    background-color: #f4f4f4;
+    grid-row: 1 / 3; /* Chiếm cả hai hàng */
+    grid-column: 1 / 2; /* Chiếm cột đầu tiên */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t2 {
+    background-color: #e0e0e0;
+    grid-row: 1 / 2; /* Chiếm hàng đầu tiên */
+    grid-column: 2 / 3; /* Chiếm cột thứ hai */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t3 {
+    background-color: #e0e0e0;
+    grid-row: 2 / 3; /* Chiếm hàng thứ hai */
+    grid-column: 2 / 3; /* Chiếm cột thứ hai */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.end{
+    margin-top: 80px;
+    width: 100%;
+    background-color:#54799d;
+    text-align: center;
+    position: relative;
+}
+.thongtin p{
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.tinnhan{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    font-size: 30px;
+    color: white;
+    padding: 15px 15px;
+    background-color: #42b72a;
+    border-radius: 10px;
+}
+.dienthoai{
+    position: absolute;
+    right: 10px;
+    top: 5px;    
+    color: white;
+    padding: 15px 15px;
+    background-color: #42b72a;
+    border-radius: 50px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

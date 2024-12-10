@@ -1,0 +1,142 @@
+Reset các kiểu mặc định
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #28a745;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-container {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
+
+.cart-item-info h2 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.cart-item-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.cart-item .quantity-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-item .quantity-btn:hover {
+    background-color: #0056b3;
+}
+
+.cart-item .remove-item {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.cart-item .remove-item:hover {
+    background-color: #c82333;
+}
+
+#total-price {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#cart-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cart-actions button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+#cart-actions #checkout-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#cart-actions #checkout-btn:hover {
+    background-color: #218838;
+}
+
+#cart-actions #clear-cart-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+#cart-actions #clear-cart-btn:hover {
+    background-color: #e0a800;
+}
+
+#cart-actions #back-to-store {
+    background-color: #007bff;
+    color: white;
+}
+
+#cart-actions #back-to-store:hover {
+    background-color: #0056b3;
+}

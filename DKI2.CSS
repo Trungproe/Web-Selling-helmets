@@ -1,0 +1,76 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #f0f4f8, #d9e6f3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Form */
+form {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+/* Input */
+form input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Hiệu ứng hover và focus */
+form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Nút Đăng ký */
+form .dki {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form .dki:hover {
+    background: #0056b3;
+}
+
+/* Placeholder */
+form input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    form {
+        padding: 15px 20px;
+    }
+
+    form input,
+    form .dki {
+        font-size: 14px;
+    }
+}

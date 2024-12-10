@@ -1,0 +1,156 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("pngtree-welcome-gay-month-pride-for-guys-on-motorbikes-image_15868154.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container:hover{
+    transform: scale(1.1) ;
+    border-radius: 50px;
+}
+.login-box:hover{
+    transform: scale(1.4) ;
+    border-radius: 50px;
+}
+.container h2:nth-child(1){
+    color: #e65b50;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdddc6;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: all 1s ease;
+    border-radius: 10px;
+
+}
+.login-box {
+    background: rgba(255, 255, 255, 0.9);
+    background-color: #fee7d7;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.8s ease;
+}
+.login-box h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 800;
+    color: #333;
+}
+.login-box p {
+    margin: 10px 0 20px;
+    font-size: 14px;
+    color: #666;
+}
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.login-box .forgot-password {
+    text-align: right;
+    font-size: 12px;
+    color: #FF6F61;
+    text-decoration: none;
+}
+.login-box .forgot-password:hover {
+    text-decoration: underline;
+}
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF6F61;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-box button:hover {
+    background-color: #e65b50;
+}
+.login-box .social-login {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.login-box .social-login a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #666;
+    text-decoration: none;
+}
+.login-box .social-login a:hover {
+    color: #333;
+}
+.login-box .register {
+    font-size: 14px;
+    color: #666;
+}
+.login-box .register a {
+    color: #FF6F61;
+    text-decoration: none;
+}
+.login-box .register a:hover {
+    text-decoration: underline;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+.sign{
+    margin-top: 10px;
+}
+.container{
+    margin-left: 20px;
+}
+.image-container img {
+    transition: transform 0.3s ease; /* Tạo hiệu ứng chuyển động mượt */
+}
+
+.image-container img:hover {
+    transform: scale(1.1) rotate(5deg); /* Phóng to và xoay nhẹ khi hover */
+}
+.sign a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
